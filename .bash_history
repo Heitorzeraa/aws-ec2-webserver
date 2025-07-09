@@ -89,3 +89,16 @@ git config --global user.name Heitor Santos
 git config --global user.email fasheitor@gmail.com
 git rm --cached adopet-frontend-cypress
 ls adopet-frontend-cypress
+git init
+git add .
+git commit -m "Primeiro commit - projeto EC2 com Apache"
+rm -rf adopet-frontend-cypress/.git
+rm -rf aws-ec2-webserver/.git
+git add .
+git commit -m "Primeiro commit - projeto EC2 com Apache"
+git remote add origin https://github.com/Heitorzeraa/aws-ec2-webserver.git
+git branch -M main
+git push -u origin main
+git remote add origin https://github.com/SEU_USUARIO/aws-ec2-webserver.git
+git branch -M main
+git push -u origin main
